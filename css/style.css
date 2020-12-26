@@ -1,5 +1,8 @@
 body {
+    overflow: hidden;
+    background-color: #24221e;
     background-image: url(../image/piotr-laskawski-gL7oJLJOb_I-unsplash.jpg);
+    background-blend-mode: multiply;
 }
 
 button {
@@ -59,7 +62,8 @@ header {
 
 .container {
     width: 800px;
-    background-color: rgba(255, 0, 0, 0.8);;
+    background-color: rgba(255, 0, 0, 0.8);
+    ;
     text-align: center;
     border: 2px solid black;
     margin: 80px auto;
@@ -77,7 +81,8 @@ header {
     border-radius: 10px;
 }
 
-#live, #hint{
+#live,
+#hint {
     font-size: 40px;
     margin-left: 10px;
     margin-top: 10px;
@@ -132,3 +137,23 @@ header {
     font-size: larger;
     margin-top: 20px;
 }
+
+.circ {
+    animation: fall linear both;
+    background-color: aqua;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    z-index: -2;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+/* test */
